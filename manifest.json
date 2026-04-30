@@ -1,0 +1,24 @@
+{
+  "name": "TiltFix — Anterior Pelvic Tilt",
+  "short_name": "TiltFix",
+  "description": "Fix your anterior pelvic tilt with guided stretches and strengthening exercises.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F7F5",
+  "theme_color": "#2F7A58",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
