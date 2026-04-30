@@ -407,13 +407,13 @@ function renderExercises() {
   document.getElementById('exercises-content').innerHTML = `
     <div class="filter-bar">
       <button class="filter-chip ${exerciseFilter === 'all' ? 'active' : ''}" onclick="setFilter('all')">All</button>
-      <button class="filter-chip ${exerciseFilter === 'stretch' ? 'active' : ''}">
+      <button class="filter-chip ${exerciseFilter === 'stretch' ? 'active' : ''}" onclick="setFilter('stretch')">
         <span class="dot" style="background:#4A7FB5"></span>
-        <span onclick="setFilter('stretch')">Stretch & Release</span>
+        <span>Stretch &amp; Release</span>
       </button>
-      <button class="filter-chip ${exerciseFilter === 'strengthen' ? 'active' : ''}">
+      <button class="filter-chip ${exerciseFilter === 'strengthen' ? 'active' : ''}" onclick="setFilter('strengthen')">
         <span class="dot" style="background:#2F7A58"></span>
-        <span onclick="setFilter('strengthen')">Strengthen & Activate</span>
+        <span>Strengthen &amp; Activate</span>
       </button>
     </div>
     <div class="exercises-list">
@@ -864,7 +864,6 @@ function daysSinceStart(state) {
 
 function getWeekData(state) {
   const completedToday = state.completedToday || {};
-  const days = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   // Get Mon–Sun of current week
